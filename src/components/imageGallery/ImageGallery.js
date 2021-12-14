@@ -23,14 +23,13 @@ import ImageCarousel from '../imageCarousel/ImageCarousel';
 
 export default function ImageGallery() {
   const classes = useStyles();
-
   const isShowModal = useSelector(getShowModal);
   const images = useSelector(getImages);
   const searchValue = useSelector(getValueFromForm);
   const page = useSelector(getpage);
   const isLoading = useSelector(getLoading);
-
   const dispatch = useDispatch();
+
   const handlePageIncrement = () => {
     dispatch(pageIncrement());
     scroll.scrollToBottom();

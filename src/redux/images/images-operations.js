@@ -10,7 +10,6 @@ export const fetchimagesOperation = createAsyncThunk(
       if (response.data.hits.length === 0) {
         toast.error('Sorry, images not found');
       }
-      console.log(response.data.hits);
       return response.data;
     } catch (error) {
       rejectWithValue(error);

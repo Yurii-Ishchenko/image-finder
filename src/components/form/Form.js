@@ -19,7 +19,7 @@ export default function Form() {
   const handeFormSubmit = e => {
     e.preventDefault();
     if (value.trim() === '') {
-      toast.error('enter something');
+      toast.error('Enter something');
       return;
     }
     dispatch(getValueFromForm(value));
